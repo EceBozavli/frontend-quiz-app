@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/quiz.css" />
+    <script src="./assets/js/quiz.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-title">
+        <img />
+        <h2></h2>
+      </div>
+      <label>
+        <img src="./assets/img/sun.svg" class="light-mode" />
+        <img src="./assets/img/dark-mode/sun.svg" class="dark-mode" />
+        <input class="switch" type="checkbox" />
+        <img src="./assets/img/moon.svg" class="light-mode" />
+        <img src="./assets/img/dark-mode/moon.svg" class="dark-mode" />
+      </label>
+    </div>
+    <div class="container">
+      <div class="main-page">
+        <div class="main-page-header">
+          <h1><strong>Frontend Quiz!</strong>Hoşgeldiniz</h1>
+          <span>Bir konu seç ve başla!</span>
+        </div>
+        <div class="quiz-type">
+          <button class="quizTypeButton" data-id="HTML"><img src="./assets/img/html.svg" />HTML</button>
+          <button class="quizTypeButton" data-id="CSS"><img src="./assets/img/css.svg" />CSS</button>
+          <button class="quizTypeButton" data-id="JavaScript"><img src="./assets/img/js.svg" />JavaScript</button>
+          <button class="quizTypeButton" data-id="Erişilebilirlik"><img src="./assets/img/accessibility.svg" />Erişilebilirlik</button>
+        </div>
+      </div>
+
+      <div class="quiz-page" style="display: none">
+        <div class="quiz-page-header">
+          <span></span>
+          <p></p>
+          <div class="progressBar">
+            <div class="progressStatus"></div>
+          </div>
+        </div>
+        <div class="quiz-section">
+          <form action="#" class="quizSectionForm">
+            <div class="quizSectionFormOptions">
+            </div>
+            <button class="submitAnswer">Cevabı Gönder</button>
+            <button class="submitNextBtn">Sıradaki Soru</button>
+            <span class="statusMsg"><img src="./assets/img/incorrect.svg" >Lütfen cevap seçin!</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="result-page" style="display: none">
+        <div class="result-page-header">
+          <h1>Sınav tamamlandı<strong>İşte skorun...</strong></h1>
+        </div>
+        <div class="result-page-footer">
+          <div class="result-user-score">
+            <h4><img src="./assets/img/accessibility.svg" /></h4>
+            <h1></h1>
+            <span></span>
+          </div>
+          <button class="playAgainBtn">Tekrar Oyna</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
